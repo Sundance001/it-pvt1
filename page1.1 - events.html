@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+  <title>StarTrack</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+<div class="navbar navbar-inverse navbar-fixed-top">
+	<div class="container">
+		<div class="navbar-header">
+			<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#">StarTrack - Экскурсии и события</a>
+		</div>
+
+		<div class="navbar-collapse collapse">
+			    <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Главная</a></li>
+          <li><a href="#">Экскурсии</a></li>
+          <li><a href="#">Знаменитые места</a></li>
+          <li><a href="#">Туры</a></li>
+    
+    
+          </li>
+        </ul>
+
+
+         <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Проекты <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Новости</a></li>
+              <li class="bg-info" class = "active"><a href="#">Экскурсии и события</a></li>
+              <li><a href="#">Каталог подарков</a></li>
+            </ul>
+          </li>
+        </ul>
+
+
+		</div>
+	</div>
+</div>
+
+
+    <!-- Carousel
+    ================================================== -->
+
+<div class="jumbotron" style="padding-bottom: 0px">
+		<div class="carousel slide" id="myCarousel">
+		<ol class="carousel-indicators">
+			<li class="active" data-target="#myCarousel" data-slide-to="0"></li>
+			<li data-target="#myCarousel" data-slide-to="1"></li>
+			<li data-target="#myCarousel" data-slide-to="2"></li>
+		</ol>
+		<div class="carousel-inner">
+			<div class="item active" id="carousel">
+				<img src="images/minsk.jpg" width="100%"/>
+				<div class="carousel-caption">
+					<h2>Обзорная экскурсия по Минску</h2>
+					<br/><h4 ><b>Время и место отправления экскурсионного тура:</b> 14:00 центральный вход на ж/д вокзал, слева у карты города (внутри вокзала), пл. Привокзальная, 3<br>
+                     <b>Маршрут:</b> Привокзальная площадь - площадь Независимости – Национальная библиотека - площадь Свободы – проспект Победителей - Минск-Арена - Троицкое предместье - Привокзальная площадь </h4>
+					<br/><p><a class="btn btn-lg btn-primary" href="https://vetliva.ru/tourism/cognitive-tourism/minsk/?booking[id][]=3915" role="button">Подробнее</a></p>
+				</div>
+			</div>
+			<div class="item" id="carousel">
+				<img src="images/brest.jpg" width="100%"/>
+				<div class="carousel-caption">
+					<h2>Экскурсия «ALBARUTHENIA: Брест - Пуща, 2 дня»</h2>
+					<br/><h4><b>Время и место отправления экскурсионного тура:</b> 8.00, от гостиницы Беларусь, ул. Сторожевская, 15<br>
+                       <b>Маршрут:</b> Минск - Мир - Брест - Бе­ло­веж­ская пу­ща - Минск</h4>
+					<br/><p><a class="btn btn-lg btn-primary" href="https://vetliva.ru/tourism/cognitive-tourism/albaruthenia-brest-pushcha-2-dnya/?booking[id][]=2801	" role="button">Подробнее</a></p>
+				</div>
+			</div>
+			<div class="item" id="carousel">
+				<img src="images/word.jpg" width="100%"/>
+				<div class="carousel-caption">
+					<h2>Экскурсия «Памятники Мира и Несвижа»</h2>
+					<br/><h4><b>Время и место отправления экскурсионного тура:</b> 9:00 от гостиницы Беларусь, ул. Сторожевская, 15<br>
+                     <b>Маршрут: Минск - Мир - Несвиж - Минск</b></h4>
+					<br/><p><a class="btn btn-lg btn-primary" href="https://vetliva.ru/tourism/cognitive-tourism/pamyatniki-mira-i-nesvizha/?booking[id][]=2797" role="button">Подробнее</a></p>
+				</div>
+			</div>
+		</div>
+		<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+	</div>
+</div>
+
+<div class="container" style="width: 80%">
+	<div class="row" align-items-start>
+		<div class="col-md-8">
+			<img class="featurette-image img-responsive center-block" src="images/minsk.jpg" alt="Generic placeholder image">
+			<a href="https://vetliva.ru/tourism/cognitive-tourism/minsk/?booking[id][]=3915"><h2>Обзорная экскурсия по Минску</h2></a>
+			<p><b>Время и место отправления экскурсионного тура:</b> 14:00 центральный вход на ж/д вокзал, слева у карты города (внутри вокзала), пл. Привокзальная, 3<br>
+                     <b>Маршрут:</b> Привокзальная площадь - площадь Независимости – Национальная библиотека - площадь Свободы – проспект Победителей - Минск-Арена - Троицкое предместье - Привокзальная площадь </p>
+		</div>
+		<div class="col-md-4">
+		<img class="featurette-image img-responsive center-block" src="images/word.jpg" alt="Generic placeholder image">
+			<a href="https://vetliva.ru/tourism/cognitive-tourism/pamyatniki-mira-i-nesvizha/?booking[id][]=2797"><h3>Экскурсия «Памятники Мира и Несвижа»</h3></a>
+			<p><b>Время и место отправления экскурсионного тура:</b> 9:00 от гостиницы Беларусь, ул. Сторожевская, 15<br>
+                     <b>Маршрут: Минск - Мир - Несвиж - Минск</b></p>
+		</div>
+	</div> 
+	<hr> 
+		<div class="row">
+		<div class="col-md-4">
+		<img class="featurette-image img-responsive center-block" src="images/nanose.jpg" alt="Generic placeholder image">
+			<a href="https://vetliva.ru/tourism/cognitive-tourism/etnokulturnyy-kompleks-nanosy-novosele/?booking[id][]=2808"><h2>Экскурсия в этнокультурный комплекс Наносы-Новоселье</h2></a>
+			<p><b>Время и место отправления экскурсионного тура:</b> 9:00 от гостиницы Беларусь, ул. Сторожевская, 15<br>
+             <b>Маршрут:</b> Минск - озеро На­рочь - комплекс На­но­сы-Новоселье - Минск</p>
+		</div>
+		<div class="col-md-4">
+		<img class="featurette-image img-responsive center-block" src="images/skansen.jpg" alt="Generic placeholder image">
+			<a href="https://vetliva.ru/tourism/cognitive-tourism/belorusskiy-skansen/?booking[id][]=3565"><h2>Экскурсия в Строчицы «Белорусский скансен»</h2></a>
+			<p><b>Время и место отправления экскурсионного тура:</b> 10.30 от гостиницы Беларусь (ул. Сторожевская 15)<br>
+             <b>Маршрут:</b> Минск - Музей народной архитектуры и быта - агроусадьба Ганка - Минск</p>
+		</div>
+		<div class="col-md-4">
+		<img class="featurette-image img-responsive center-block" src="images/grodno.jpg" alt="Generic placeholder image">
+			<a href="hhttps://vetliva.ru/tourism/cognitive-tourism/svidanie-s-grodno/?booking[id][]=3625"><h2>Экскурсия «Свидание с Гродно»</h2></a>
+			<p><b>Время и место отправления экскурсионного тура:</b> 11.00 возле ресторана Бакст, Большая Троицкая ул. 21<br>
+             <b>Маршрут:</b> Пожарная башня - Старый замок - Новый замок - Коложский парк - Коложская церковь - Лестница любви - Площадь Советсткая - Фарный костел - Улица Совесткая - Площадь Ленина - Покровский собор - Лютеранская Кирха</p>
+		</div>
+		
+	</div><hr> 
+		<div class="row">
+		<div class="col-md-4">
+		<img class="featurette-image img-responsive center-block" src="images/new-year.jpg" alt="Generic placeholder image">
+			<a href="https://vetliva.ru/tourism/cognitive-tourism/novogodniy-ekshn-rytsarskoe-puteshestvie-v-srednevekove-5-dney-/?booking[id][]=4228"><h3>Новогодний экшн - Рыцарское путешествие в средневековье, 5 дней</h3></a>
+			<p><b>Время и место отправления экскурсионного тура:</b> 30.12.2017 прибываем в ТОК Орша к 10 часам.<br> 
+               <b>Маршрут:</b> Ваш дом - ТОК Орша - Ваш дом</p>
+		</div>
+		<div class="col-md-8">
+			<img class="featurette-image img-responsive center-block" src="images/bison.jpg" alt="Generic placeholder image">
+			<a href="https://vetliva.ru/tourism/cognitive-tourism/ng1-zimnyaya-skazka-zh-d/?booking[id][]=4013"><h2>Экскурсия «NG1 Зимняя сказка (ж/д)»</h2></a>
+			<p><b>Время и место отправления экскурсионного тура:</b> Встреча с гидом у вагона №7 вашего поезда с табличкой Зимняя сказка (рекомендуем приобретать билеты на поезда, прибывающие в Минск не позднее 9:00)<br>
+               <b>Маршрут:</b> Минск - Березинский заповедник - Мир - Несвиж - Дудутки - Минск </p>
+		</div>
+	</div>
+	<button type="button" class="btn btn-default">Читать далее</button>
+<hr> 
+</div>
+</div>
+
+
+
+
+	</div>
+    <!----------- Footer ------------>
+    <footer class="footer-bs" style="background-color: #3c3d41;
+									padding: 40px 40px;
+									padding-right: 10%;
+									padding-left: 10%;
+									color: rgba(255,255,255,1.00);">
+        <div class="row">
+        	<div class="col-md-3">
+            	<h4 class="text-center">Logo</h4>
+                <p>Suspendisse hendrerit tellus laoreet luctus pharetra. Aliquam porttitor vitae orci nec ultricies. Curabitur vehicula, libero eget faucibus faucibus, purus erat eleifend enim, porta pellentesque ex mi ut sem.</p>
+            </div>
+        	<div class="col-md-4">
+            	<h4 class="text-center">Menu</h4>
+            	<div class="col-md-6">
+                    <ul class="pages">
+                        <li><a href="#">Новости</a></li>
+                        <li><a href="#">События</a></li>
+                        <li><a href="#">Подарки</a></li>
+                    </ul>
+                </div>
+            	<div class="col-md-6">
+                    <ul class="list">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contacts</a></li>
+                        <li><a href="#">Terms & Condition</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        	<div class="col-md-2">
+            	<h4 class="text-center">Follow Us</h4>
+            	<ul>
+                	<li><a href="#">Facebook</a></li>
+                	<li><a href="#">Twitter</a></li>
+                	<li><a href="#">Instagram</a></li>
+                	<li><a href="#">RSS</a></li>
+                </ul>
+            </div>
+        	<div class="col-md-3">
+            	<h4 class="text-center">E-mail уведомления</h4>
+                <p class="text-center">Подпишитесь на нашу рассылку и получайте последние новости и выгодные предложения</p>
+                <p>
+                    <div class="input-group">
+                      <input type="text" class="form-control" placeholder="Подписаться...">
+                      <span class="input-group-btn">
+                        <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-envelope"></span></button>
+                      </span>
+                    </div><!-- /input-group -->
+                 </p>
+            </div>
+             <div class="row">
+        	<div class="col-md-12">
+        	<br>
+        	<p class="text-center">© 2017 HTP Courses, All rights reserved</p>
+        	</div>
+        	</div>
+        </div>
+    </footer>
+
+
+
+
+
+	  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>
